@@ -129,18 +129,18 @@
 // input arr = [1,2,3,4] middleNumber = 2.5 o'rtadagi sonning o'rta arifmetigi
 
 
-let array = [1, 2, 3, 4, 5];
+let arr = [1, 2, 3, 4, 5];
 
-function MiddleNum(array) {
-    const len arr.length;
+function MiddleNum(arr) {
+    const len = arr.length;
     const res = Math.floor(len / 2);
 
     if (len % 2 === 0) {
-        const res1 = array[res - 1];
-        const res2 = array[res];
+        const res1 = arr[res - 1];
+        const res2 = arr[res];
         return (res1 + res2) / 2
     } else {
-        return array[res];
+        return arr[res];
     }
 }
-console.log(MiddleNum(array))
+console.log(MiddleNum(arr))
