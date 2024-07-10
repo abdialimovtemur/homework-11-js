@@ -15,13 +15,30 @@
 
 
 
+
+
+
+
+
 // 2. argument sifatida berilgan stringda nechta son qatnashganligini aniqlaydigan function tuzing
 
 // let userStr = prompt("So'zlarni kiriting");
 
-// function seperateNum() {
+// function seperateNum(userStr) {
+//     let arr = userStr.split("");
+//     let total = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (!isNaN(arr[i])) {
+//             total++;
+//         }
 
+//     }
+//     console.log(total)
 // }
+
+// seperateNum(userStr)
+
+
 
 
 
@@ -47,13 +64,37 @@
 
 
 
+
+
+
 // 4. Gapdagi eng uzun va eng qisqa so’zlarni aniqlab {minWord: “…”, maxWord: “….”} qiymat qaytaruvchi minManWord() nomli function yarating Input: “Men dasturlash kursida o’qiyman” Output: {minWord: “Men”, maxWord: “dasturlash”} 
+
+// let userStr = prompt("So'zni kiriting")
+
+// function minOrmaxword(userStr) {
+
+// }
+
+// minOrmaxword()
+
+
 
 
 
 
 
 // 5. Stringlar arrayi berilgan. Shunday object hosil qilinki o’sha object kalitlari array elementlaridan va qiymatlari ularning uzuligindan iborat bo’lsin Input: [”text”, “world”, “laptop”] Output: {”text”: 4, “world”: 4, “laptop”: 6} 
+
+// let array = ["Lamborghine", "Porshe", "Apple", "Samsung", "Lenova"]
+
+// function arrAndObj(arr) {
+//     let obj = {};
+//     for (let i = 0; i < array.length; i++) {
+//         obj[array[i]] = array[i].length;
+//     }
+//     console.log(obj)
+// }
+// arrAndObj()
 
 
 
@@ -75,3 +116,31 @@
 // }
 
 // nToDegree()
+
+
+
+
+
+
+
+
+// 7. array ichidagi o'rtadagi sonni topoadigan function tuzing
+// input:arr = [1,2,3,4,5] middleNumber = 3
+// input arr = [1,2,3,4] middleNumber = 2.5 o'rtadagi sonning o'rta arifmetigi
+
+
+let array = [1, 2, 3, 4, 5];
+
+function MiddleNum(array) {
+    const len arr.length;
+    const res = Math.floor(len / 2);
+
+    if (len % 2 === 0) {
+        const res1 = array[res - 1];
+        const res2 = array[res];
+        return (res1 + res2) / 2
+    } else {
+        return array[res];
+    }
+}
+console.log(MiddleNum(array))
